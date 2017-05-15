@@ -1,0 +1,72 @@
+.CardPostMini
+  display: flex;
+  flex-direction: column;
+  width: 100%
+  height: 235px
+  background-color: indigo
+  color: #fff
+  position: relative;
+  justify-content: center;
+  text-align: center;
+
+  .img-holder
+    position: absolute;
+    top: 0
+    cursor: pointer;
+  .post-image
+    background-position: center!important;
+    background-size: cover!important;
+    width: 100%
+    height: 100%
+
+  img
+    width: 100%
+    height: 100%
+
+  .shares
+    position: absolute;
+    top: 70px
+    left: 0
+    right: 0
+    font-size: 1.05em;
+    font-weight: 400;
+
+  .legenda-holder
+    display: flex
+    flex-direction: column;
+    text-align: left
+    line-height: 1.3em
+    background-color: #FFFFFF
+    bottom: 0;
+    height: 25%
+    padding: 12px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+    .titulo
+      text-transform: capitalize
+      font-size: 0.9em;
+      font-weight: 500
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      // height:56px /* fallback */
+
+    .tags
+      display: flex
+      span
+        margin 0px 5px 5px 0
+        font-size: 0.75em
+        color: #878889
+        cursor: pointer;
+
+  @media screen and (max-width: 800px)
+    margin: 5px auto !important;
+    // width: 95%
+    // &:last-child
+    //   display: none;

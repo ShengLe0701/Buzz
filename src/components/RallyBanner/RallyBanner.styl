@@ -1,0 +1,60 @@
+.RallyBanner
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px
+
+  .mensagem-mobile
+    display: none
+
+  .banner
+    color: #fff
+    background: url('../../images/rally.jpg') no-repeat center
+    background-size: cover;
+    display: flex;
+    padding: 5px 55px
+    box-sizing: border-box;
+    height: 220px
+
+  .left
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px
+    text-align: left
+    position: relative;
+    top: -10px
+    h1
+      margin 0
+      margin-bottom 25px
+      font-weight: 500
+      font-size: 1.7em
+
+    p
+      position: relative;
+      font-size: 1.3em
+
+  .right
+    text-align: left;
+    li
+      font-size: 0.85em
+      line-height: 1.5em
+
+  .mensagem
+    margin-top: 30px;
+    p
+      font-size: 1.05em;
+      line-height: 1.7em;
+      margin: 25px 95px 0 95px;
+
+  @media screen and (max-width: 800px)
+    .banner
+      height: 170px
+    .left
+      display: none
+    .mensagem-mobile
+      display: block;
+      background-color: #fff;
+      padding: 15px;
+    h1
+      font-size: 1.4em

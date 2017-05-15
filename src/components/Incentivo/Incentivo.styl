@@ -1,0 +1,43 @@
+.Incentivo
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px
+
+  .banner
+    display: none!important
+    color: #fff
+    background: url('../../images/banner2.jpg') no-repeat center
+    display: flex;
+    padding: 25px 55px
+    box-sizing: border-box;
+
+  .left
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p
+      position: relative;
+      font-size: 1.3em
+
+  .right
+    text-align: left;
+    li
+      font-size: 0.85em
+      line-height: 1.5em
+
+  .mensagem
+    margin-top: 30px;
+    p
+      font-size: 1.05em;
+      line-height: 1.7em;
+      margin: 25px 95px 0 95px;
+
+  @media screen and (max-width: 800px)
+    margin-top: 0
+    .right
+      display: none
+    .mensagem
+      margin-top: 0
+      p
+        margin: 25px 40px 0 40px;

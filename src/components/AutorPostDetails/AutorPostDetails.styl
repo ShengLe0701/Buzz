@@ -1,0 +1,76 @@
+#AutorPostDetails
+  display: flex;
+  flex-direction: column;
+  width: 100%
+  height: auto
+  position: relative;
+  margin: 35px 0
+  margin-top: 5px
+  cursor: pointer
+
+  .posts-mesmo-autor
+    background-color: #fff
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    margin-top: 10px
+    // padding: 5px 20px
+    .post-details
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px
+      border-bottom: 1px solid rgba(0, 0, 0, .05);
+      &:last-child
+        border: none
+      .left
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .details
+          display: flex;
+          svg
+            width: 18px!important
+            height: 18px!important
+      .titulo
+        font-weight: 600;
+        font-size: 1.15em
+      .nome
+        font-size: 0.85em
+        line-height: 1.7em
+        color: #8F8F8F
+        margin-right: 10px
+    .post-image
+      background-position: center !important;
+      background-size: cover !important;
+      width: 75px
+      height: 75px
+  .autor-info-holder
+    display: flex;
+    width: 100%
+    margin-top: 10px
+    .autor-info
+      width: 100%
+      display: flex
+      margin-left: 2px
+      .info
+        display: flex
+        width: 85%
+        flex-direction: column
+        justify-content: center
+      span
+        text-transform: capitalize
+        &:hover
+          color: rgba(0, 0, 0, .9)
+        &:last-child
+          font-size: 13px
+          color: #727272
+          white-space: nowrap!important;
+          text-overflow: ellipsis!important;
+          overflow: hidden!important;
+    span
+      font-size: 1.13em;
+      margin-left: 15px;
+      line-height: 1.35em;
+      font-weight: normal;
+      letter-spacing: 0.03em;
+
+    img
+      margin-bottom: 0

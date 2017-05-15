@@ -1,0 +1,34 @@
+.CadastroDialog
+  text-align: center;
+  .dialog-content
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 35px
+    position: relative;
+    text-align: center;
+  .confirma-senha
+    position: relative;
+  .email-indicacao-holder
+    margin-bottom: 20px
+  .mensagem-termos
+    font-size: 0.77em
+    color: #727272
+    position: absolute;
+    left: 0
+    right: 0
+    bottom: 53px
+    &:hover
+      color: #212121
+      cursor: pointer;
+  .campos-obrigatorios
+    font-size: 0.77em
+    color: #727272
+    position: absolute;
+    right: 5px
+    bottom: -16px
+
+  @media screen and (max-width: 800px)
+    flex-direction: column;
+    .dialog-content
+      padding: 0
+      flex-direction: column;

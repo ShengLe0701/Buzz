@@ -1,0 +1,59 @@
+.Relacionados
+  display: block;
+  text-align: center;
+  position: relative;
+  padding-top: 55px;
+  margin-bottom: 45px;
+
+  .section-name
+    color: #363739;
+    font-size: 1.1em;
+    font-weight: 500
+    margin-bottom: 15px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+
+  .posts-upper
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+
+  .posts-down
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .Post
+      height: 15.5em
+
+  @media screen and (max-width: 800px)
+    .posts-upper
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 15px 0;
+      .PostPequeno
+        &:last-child
+          display: none;
+    .section-name
+      margin-left: 18px
+      font-size: 1.15em
+    .posts-down
+      width: 100%
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 0;
+      box-sizing: border-box;
+      .CardPostPequeno
+        height: 30vh
+        width: 45%
+        &:first-child
+          display: none
+        &:last-child
+          display: none
+        .tags
+          display: none
+        .legenda-holder
+          height: 45%

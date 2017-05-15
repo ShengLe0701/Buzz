@@ -1,0 +1,217 @@
+// @flow
+'use strict';
+
+import React, {
+  Component
+} from 'react';
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import './Contato.styl';
+import imagemFone from '../../images/fone.png';
+import imagemEmail from '../../images/email.png';
+import Facebook 	from '../../images/FACEBOOK.png';
+import Twitter 	from '../../images/TWITTER.png';
+import Instagram from '../../images/INSTAGRAM.png';
+import YouTube from '../../images/YOUTUBE.png';
+import TextField from 'material-ui/TextField';
+import SelectField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
+import FlatButton from 'material-ui/FlatButton';
+import IconButton from 'material-ui/IconButton';
+import style from './style'
+
+
+class Contato extends Component {
+
+	constructor(props){
+		super(props);
+		this.state = {
+			nome: '',
+			email: '',
+			telefone:'',
+			tipo:'',
+			mensagem:'',
+			erroEmail:'',
+			erroNome:''
+		}
+	}
+
+  componentWillMount(){
+    this.props.actions.forceNotHome();
+  }
+
+	verificaEmail = () => {
+		let email = this.state.email
+		console.log(email.split('@').length)
+	  if (email.split('@').length < 2 ){
+			this.setState({
+				erroEmail:'Email inválido'
+			})
+	  } else {
+			this.setState({
+				erroEmail:''
+			})
+		}
+	}
+
+	verificaNomeCompleto = () =>{
+		let nome = this.state.nome
+		console.log(nome.split(' ').length)
+	  if (nome.split(' ').length < 2 ){
+			this.setState({
+				erroNome:'Nome inválido'
+			})
+	  }else{
+		this.setState({
+			erroNome:''
+		})}
+	}
+
+	nomeChange = (e, value) => {
+		console.log(value)
+		this.setState({
+			nome: value
+		})
+	}
+	telefoneChange = (e, value) => {
+		console.log(value)
+		this.setState({
+			telefone: value
+		})
+	}
+	emailChange = (e, value) => {
+		console.log(value)
+		this.setState({
+			email: value
+		})
+	}
+	tipoChange = (e, value) => {
+		console.log(value)
+		this.setState({
+			tipo: value
+		})
+	}
+	mensagemChange = (e, value) => {
+		console.log(value)
+		this.setState({
+			mensagem: value
+		})
+	}
+	onSubmit = () => {
+		console.log('onSubmit')
+		console.log(this.state)
+	}
+
+	render(){
+		return(
+			<div className='Contato'>
+<<<<<<< HEAD
+        <div className='RedesSociaisMobile'>
+          <img src={Facebook} alt='Facebook Buzzpage' width='36' height='36' />
+          <img src={Twitter} alt='Twitter Buzzpage' width='36' height='36' />
+          <img src={Instagram} alt='Instagram Buzzpage' width='36' height='36' />
+          <img src={YouTube} alt='Youtube Buzzpage' width='36' height='36' />
+        </div>
+=======
+>>>>>>> origin/quemsomos
+				<div className='content'>
+					<form>
+					<div className='primeira'>
+					<div className='divbox'>
+					<TextField
+						value={this.state.nome}
+			      hintText='Nome Completo'
+						onChange={this.nomeChange}
+						onBlur={this.verificaNomeCompleto}
+						errorText={this.state.erroNome}
+			    />
+					</div>
+					<div className='divbox'>
+					<TextField
+						value={this.state.email}
+			      hintText='Email'
+						onChange={this.emailChange}
+						onBlur={this.verificaEmail}
+						errorText={this.state.erroEmail}
+			    />
+					</div>
+					</div>
+					<div className='segunda'>
+					<div className='divbox'>
+					<TextField
+						value={this.state.telefone}
+			      hintText='Telefone'
+						onChange={this.telefoneChange}
+			    />
+					</div>
+					<SelectField
+						value={this.state.tipo}
+						onChange={this.tipoChange}
+						autoWidth={true}
+						hintText='Eu sou:'
+					>
+						<MenuItem value={1} primaryText='Afiliado' />
+						<MenuItem value={2} primaryText='Anunciante' />
+						<MenuItem value={3} primaryText='Buzzpager' />
+						<MenuItem value={4} primaryText='Usuário' />
+					</SelectField>
+					</div>
+					<div className='terceira'>
+					<TextField
+		      hintText='Mensagem'
+					value={this.state.Mensagem}
+					onChange={this.mensagemChange}
+		      floatingLabelText='Mensagem'
+		      multiLine={true}
+		      rows={4}
+		    />
+					</div>
+					<FlatButton label='Enviar'
+					 style={style.btn}
+					 backgroundColor='#00BCD4'
+					 onClick={this.onSubmit} />
+					</form>
+
+						<div className='img'>
+            <div className='RedesSociais'>
+              <img src={Facebook} alt='Facebook Buzzpage' width='36' height='36' />
+              <img src={Twitter} alt='Twitter Buzzpage' width='36' height='36' />
+              <img src={Instagram} alt='Instagram Buzzpage' width='36' height='36' />
+              <img src={YouTube} alt='Youtube Buzzpage' width='36' height='36' />
+<<<<<<< HEAD
+            </div>
+							<img src={imagemFone} alt='Telefone Buzzpage (11)5572-0111' width='10%' height='10%' /><p>(11)5572-0111</p>
+							<img src={imagemEmail} alt='Email Buzzpage atendimento@buzzpage.com.br ' width='10%' height='10%' /><p>atendimento@buzzpage.com.br</p>
+=======
+              <IconButton
+                className="telefonebtn"
+                iconClassName="muidocs-icon-custom-github" tooltip="bottom-center"
+                tooltipPosition="bottom-center"
+              />
+            </div>
+>>>>>>> origin/quemsomos
+						</div>
+				 </div>
+				 <div className='Rodape'>
+				 </div>
+			</div>
+		)
+	}
+}
+
+function mapStateToProps(state) {
+  const props = {
+    homeReducer: state.home
+  };
+  return props;
+}
+
+function mapDispatchToProps(dispatch) {
+  const actions = {
+    forceNotHome: require('../../actions/home/forceNotHome.js')
+  };
+  const actionMap = { actions: bindActionCreators(actions, dispatch) };
+  return actionMap;
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contato);

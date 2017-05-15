@@ -1,0 +1,50 @@
+.Destaques
+  display: flex;
+  padding-top: 55px;
+  position: relative;
+  margin-bottom: 45px;
+  .section-name
+    color: #363739;
+    font-size: 1.15em;
+    font-weight: 500
+    margin-bottom: 15px;
+    position: absolute;
+    left: 0;
+    top: 14px;
+
+  .left
+    display: flex;
+    flex-direction: column;
+    width: 65%
+    margin: 0
+    margin-right: 5px
+    .bottom
+      margin-top: 10px
+      display: flex
+      .CardPostMini
+        &:first-child
+          margin-right: 10px
+  .right
+    display: flex;
+    flex-direction: column;
+    width: 35%
+    margin-left: 5px
+    .CardPostPequeno
+      &:last-child
+        margin-top: 10px
+  @media screen and (max-width: 800px)
+    flex-direction: column;
+    .section-name
+      margin-left: 18px
+    .posts-upper
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 15px 0;
+    // .right
+    //   display: none
+    .left, .right
+      width: 100%
+      margin: 0
+      .bottom
+        display: none

@@ -1,0 +1,90 @@
+.Footer
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid red
+  // height: 65px;
+  min-height: 27vh
+  height: auto
+  position: relative;
+  background-color: #FEFFFF
+  border-top: 1px solid #DEDFE0;
+
+  .footer-holder
+    color: white
+    position: relative;
+    width: 100%
+    text-align: center;
+    background: url('../../images/footer.jpg')
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 10px 100px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2
+      color: #fff
+      font-weight: 400
+      font-size: 2em
+    span
+      color: #fff
+      font-weight: 300
+      font-size: 1.06em
+
+  .links
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    // left: -25px
+    a
+      color: #FF0000
+      // margin: 0 7px
+      font-size: 0.8em;
+      cursor: pointer;
+      transition: all 175ms linear
+      &:hover
+        color: #006DC4
+    .active
+      color: #006DC4
+
+  .logo-holder
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+  .social
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: pointer;
+
+  .termos-holder
+    box-sizing: border-box;
+    background-color: #252627
+    height: 55px
+    line-height: 55px
+    width: 100%
+    text-align: center;
+    display: flex;
+    justify-content: center
+    img
+      margin auto
+    span
+      color: #fff
+      font-size: 0.85em;
+
+  @media screen and (max-width: 800px)
+
+    .termos-holder
+      box-sizing: border-box;
+
+      span
+        color: #fff
+        font-size: 0.65em;
+        margin: 0

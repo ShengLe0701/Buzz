@@ -1,0 +1,37 @@
+.CardPessoa
+  display: flex
+  height: auto
+  padding: 5px 25px
+  vertical-align: middle;
+  border-bottom: 1px solid #ebebeb;
+  &:last-child
+    border: none
+  .avatar-holder
+    width: 95px
+    margin auto 0
+    display: flex;
+    img
+      margin: auto;
+      cursor: pointer;
+
+  .detalhes
+    cursor: pointer;
+    height: 95px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%
+    box-sizing: border-box;
+    margin: 0 20px;
+    .nome
+      text-transform: capitalize;
+      font-size: 1.15em
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 300
+      transition: all 170ms ease-in
+      &:hover
+        color: rgba(0, 0, 0, 0.9);
+    .resumo
+      color: #727272
+      margin-top: 7px

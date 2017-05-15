@@ -1,0 +1,64 @@
+.ResultadoPesquisa
+  width: 100vw
+  position: relative;
+  div
+    border-radius: 0!important
+
+  svg
+    color: white!important
+
+  .paginas-holder
+    display: flex;
+    .sugestoes
+      width: 35vw
+      max-width: 300px
+  .results-holder
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // padding: 45px 0px
+  .empty-posts
+    margin-top: 20px
+    padding: 30px
+    box-sizing: border-box;
+  .loader-holder
+    margin-top: 30px
+  .tabs-holder
+    width: 100%
+    .posts
+      text-align: center
+      width 100%
+      padding 0 3%
+      max-width: 800px
+      margin 0 auto
+      z-index: 4
+      height: 100%
+      min-height: 90vh
+    .users
+      text-align: center
+      width 100%
+      padding 0 3%
+      max-width: 800px
+      z-index: 4
+      height: 90vh
+      margin: 30px auto
+    .PostGrande:first-child
+      margin-top: 0
+
+  @media screen and (max-width: 800px)
+    flex-direction: column;
+    .sugestoes
+      display: none
+    .buttons-holder
+      display: block;
+      margin: 0 auto
+      .LoginButtons
+        display: flex;
+        flex-direction: row;
+    .categorias-select
+      display: none !important;
+
+    .results-holder
+      padding: 0px
+      .posts
+        padding 0px

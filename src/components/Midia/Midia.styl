@@ -1,0 +1,56 @@
+.Midia
+  background-color: #252627
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+  position: relative;
+
+  .video-holder
+    display: flex
+    margin: 25px auto
+    width: 100%;
+    .video
+      width: 98%
+      height: 50vh
+      min-height: 500px
+      border: none
+      margin: 0 auto
+
+  .page-title
+    margin: 10px
+    margin-top: 25px
+    font-size: 1.4em;
+    color: #fff
+
+  .destaque
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    line-height: 5px;
+    background-color: #ff2a00;
+    min-height: 33px;
+    box-sizing: border-box;
+
+  @media screen and (max-width: 800px)
+    margin-top: 45px
+    text-align: center;
+
+    .destaque
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0;
+      min-height: 140px;
+      line-height: 23px
+
+    .video-holder
+      display: flex
+      margin: 25px auto
+      width: 98%
+      min-height: 400px
+      .video
+        width: 98%
+        height: 50vh
+        border: none
+        margin: auto
+        min-height: auto

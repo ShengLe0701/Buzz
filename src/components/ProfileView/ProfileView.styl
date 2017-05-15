@@ -1,0 +1,110 @@
+.ProfileView
+  width: 100%
+  margin: 0 auto
+  margin-top: 120px
+  max-width: 1100px
+  // background-color: #f1f1f1
+  div:first-child
+    100vh
+  .referral
+    h3
+      font-size: 1.25em
+      font-weight: 400
+  .nenhuma-recomendacao
+    padding: 40px
+  .tab-content-holder
+    height: 100%
+    // min-height: 44vh
+    // padding: 0 45px
+    text-align: center
+    margin-top: 30px
+    .PostGrande:first-child
+      margin-top: 0
+  .profile-holder
+    background-color: #fff
+    display: flex
+    height: auto
+    padding: 30px 0
+    text-align: center
+    flex-direction: column
+    justify-content: center
+    img
+      margin 0 auto
+    .social
+      img
+        cursor: pointer
+        margin: 10px 3px
+    .details
+      line-height: 1.25em
+      max-width: 600px
+      margin: 0 auto
+      margin-bottom: 20px
+      h2
+        font-size: 2em
+        font-weight: 500
+        color: rgba(0, 0, 0, .9)
+        line-height: 1.2em
+        margin-bottom: 10px;
+      span
+        color: rgba(0, 0, 0, .6)
+    .AnuncioPesquisa
+      margin-top: 27px
+
+    .posts
+      width 100%
+      padding: 0 100px
+      box-sizing: border-box
+      .post-holder
+        margin-top: 25px
+        iframe
+          display: flex
+          margin 0 auto
+        .titulo
+          line-height: normal
+          text-transform: capitalize
+      span
+        font-size: 2.25em
+        color: #212121
+        font-weight: bold
+        line-height: 2.563em
+      p
+        color: rgba(0, 0, 0, 0.8)
+        font-size: 1.1313em
+        line-height: 1.58
+        span
+          color: rgba(0, 0, 0, 0.8)
+          font-size: 1.1313em
+          line-height: 1.58
+          font-weight: 400
+        strong
+          font-size: 1.1313em
+          letter-spacing: -.02em
+          span
+            color: rgba(0, 0, 0, 0.8)
+            line-height: 1.58
+            font-weight: bold
+            font-size: 1.1313em
+      img
+        width: 100%
+        height: 100%
+        margin-bottom: 55px
+
+  @media screen and (max-width: 800px)
+    flex-direction: column
+    .BannerPesquisa
+      display: none
+    .AnuncioPesquisa
+      display: none
+    .posts
+      width 100%!important
+      padding: 25px 40px!important
+      img
+        display: none
+    .buttons-holder
+      display: block
+      margin: 0 auto
+      .LoginButtons
+        display: flex
+        flex-direction: row
+    .categorias-select
+      display: none !important

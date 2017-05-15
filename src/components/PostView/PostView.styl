@@ -1,0 +1,83 @@
+.PostView
+  width: 100%
+  margin-top: 115px;
+  div:first-child
+    100vh
+  .anuncio-lateral
+    width: 10%
+  .results-holder
+    width: 90%
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: auto
+
+    .AnuncioPesquisa
+      margin-top: 27px
+    .comentarios-holder
+      width 100%
+    .posts
+      width 100%
+      padding: 0px
+      margin: 0 auto
+      box-sizing: border-box
+      .post-holder
+        display: flex
+        margin-top: 25px
+        .conteudo
+          width: 80%;
+        iframe
+          display: flex
+          margin 0 auto
+        .titulo
+          text-transform: capitalize;
+          font-size: 2.25em
+          color: #212121
+          font-weight: bold;
+          line-height: 1.363em
+      p
+        color: rgba(0, 0, 0, 0.8)
+        font-size: 1.1313em
+        line-height: 1.58
+        span
+          color: rgba(0, 0, 0, 0.8)
+          font-size: 1.1313em
+          line-height: 1.58
+          font-weight: 400;
+        strong
+          font-size: 1.1313em
+          letter-spacing: -.02em
+          span
+            color: rgba(0, 0, 0, 0.8)
+            line-height: 1.58
+            font-weight: bold
+            font-size: 1.1313em
+      img
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        display: flex;
+
+  @media screen and (max-width: 800px)
+    flex-direction: column;
+    .BannerPesquisa
+      display: none
+    .results-holder
+      width: 100%
+    .AnuncioPesquisa
+      display: none
+    .posts
+      width 100%!important
+      padding: 15px!important
+      iframe
+        width: 100%
+      img
+        display: none
+    .buttons-holder
+      display: block;
+      margin: 0 auto
+      .LoginButtons
+        display: flex;
+        flex-direction: row;
+    .categorias-select
+      display: none !important;

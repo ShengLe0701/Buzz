@@ -1,0 +1,31 @@
+.Pesquisa
+  display: flex;
+  justify-content: center;
+  min-height: 55px;
+  position: relative;
+  bottom: -10px
+  width: 100%
+  margin: 0 auto
+  padding-right: 4.5%
+  box-sizing: border-box;
+
+  .input-pesquisa
+    width: 100%!important
+
+  .buttons-holder
+    display: none;
+
+  @media screen and (max-width: 800px)
+    // .input-pesquisa
+    //   display: none!important
+    // .search-icon
+    //   display: none!important
+    .buttons-holder
+      display: block;
+      margin: 10px auto
+      .LoginButtons
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    .categorias-select
+      display: none !important;

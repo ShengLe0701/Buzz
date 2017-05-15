@@ -1,0 +1,26 @@
+.LoginDialog
+  text-align: center;
+  .dialog-content
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 35px
+    text-align: center;
+    position: relative;
+  .recuperar-link
+    cursor: pointer;
+    color: rgba(0,0,0,.4)
+    transition: all 150ms ease-in
+    position: absolute;
+    right: 55px
+    bottom: -5px
+    &:hover
+      color: rgba(0,0,0,.9)
+
+  @media screen and (max-width: 800px)
+    flex-direction: column;
+    .dialog-content
+      padding: 0
+      min-height: 200px
+      flex-direction: column;
+      .recuperar-link
+        bottom: -17px

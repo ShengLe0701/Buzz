@@ -1,0 +1,80 @@
+.Apresentacao
+  width: 100%
+  text-align: center;
+  margin: 45px 0
+  .explicacao-holder
+    display: flex;
+    padding-top: 35px;
+    .explicacao
+      width: 100%
+    img
+      width: 130px;
+      height: auto;
+    p
+      text-align: center;
+      padding 5px 45px
+      color: #727272
+      font-size: 1.15em
+      font-weight: 300
+      .bold
+        font-weight: 500
+    h4
+      font-size: 1.25em
+  h3
+    color: #5B5B5B
+    font-size: 2.4em
+    font-weight: 400
+  .banner
+    position: relative;
+    text-align: center;
+    width: 100%
+    height: 350px
+    background: url('../../images/bg-banner.jpg') no-repeat center
+    display: flex;
+    justify-content: center;
+    .content
+      position: relative;
+      top: 20px
+      margin: 0 auto
+    .first-message
+      position: relative;
+      width: 550px
+      top: 0px
+      background-color: #A1473F
+      opacity: 0.5
+      margin: 0 auto
+      h3
+        padding 11px
+        font-size: 2.2em
+        color: #fff
+    .second-message
+      position: relative;
+      margin: 0 auto
+      margin-bottom: 25px
+      width: 450px
+      top: 0px
+      background-color: #598993
+      opacity: 0.5
+      p
+        padding 10px
+        font-size: 1.5em
+        color: #fff
+  .explicacao-holder
+    display: flex;
+    justify-content: space-around;
+    .motivos
+      width: 35%
+
+  @media screen and (max-width: 800px)
+    flex-direction: column;
+    .buttons-holder
+      display: block;
+      margin: 0 auto
+      .LoginButtons
+        display: flex;
+        flex-direction: row;
+    .categorias-select
+      display: none !important;
+
+    .explicacao-holder
+      flex-direction: column;

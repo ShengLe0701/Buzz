@@ -1,0 +1,100 @@
+.Header
+  height: 115px
+  z-index: 1300;
+  position: fixed;
+  top: 0
+  transition: all 250ms ease-in
+  width: 100%
+
+  .header-content
+    // position: fixed;
+    height: 100%;
+    display: flex
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    .top
+      padding: 0 0.9em
+      position: relative;
+      top: 0.65em
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+    .bottom
+      padding: 0 0.9em
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%
+    .sticked
+      background-color: white
+      box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px
+      max-width: none
+      left:0
+      right: 0
+
+  .loadingBar
+    position: absolute;
+    top: 0
+  .links-holder
+    line-height: 2.5em
+      .link
+        opacity: 0.75
+        cursor: pointer;
+        &:hover
+          opacity: 1
+      span
+        font-size: 13px
+        text-transform: uppercase;
+        margin: 0 7px
+  .links
+    display: flex;
+    position: absolute;
+    bottom: 15px
+    left: 15px
+    .active
+      color: #006DC4
+    a
+      color: #FF0000
+      margin: 0 7px
+      font-size: 0.85em;
+      cursor: pointer;
+      transition: all 175ms linear
+      &:hover
+        color: #006DC4
+
+  .logo-holder
+    left: 1em
+    top: 1em
+    img
+      cursor: pointer;
+    span
+      color: #FF0000
+      font-size: 1.5em
+
+  .buttons-holder
+    display: flex
+  //   position: absolute;
+  //   right: 35px;
+  //   top: 3px;
+
+  @media screen and (max-width: 800px)
+    .content-holder
+      height: 70px
+      box-sizing: border-box;
+    .links-holder
+      display: none
+    .buttons-holder
+      top: 5px;
+      right: -18px;
+
+    .logo-holder
+      top: 4px;
+      left: 4px
+      position: relative
+      img
+        width: 150px
+        height: 32px
